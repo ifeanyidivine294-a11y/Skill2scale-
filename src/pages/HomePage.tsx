@@ -274,6 +274,48 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
         </div>
       </section>
 
+      {/* FOUNDER LEADERSHIP (CEO SECTION) */}
+      <section className="py-20 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-xs font-bold text-[#0757D5] tracking-widest uppercase">
+              Founder Leadership
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071A3D] mt-1">
+              What Our CEO Has to Say
+            </h2>
+          </div>
+
+          <div className="bg-[#F7F9FC] border border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-14 shadow-xs">
+            {/* CEO Image */}
+            <div className="shrink-0 w-52 sm:w-64 lg:w-72">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-slate-100">
+                <img
+                  src="/images/ceo.png"
+                  alt="Chigozie Nkwo - Founder and CEO of Skill2Scale"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            {/* CEO Exact Statement */}
+            <div className="space-y-6 text-center lg:text-left flex-1">
+              <div className="text-4xl sm:text-5xl text-[#0757D5] font-serif leading-none">“</div>
+              <blockquote className="text-xl sm:text-2xl lg:text-3xl font-extrabold italic text-[#071A3D] leading-relaxed -mt-4">
+                &ldquo;We’re not just teaching skills. We’re solving unemployment, increasing access,
+                and giving Africans a shot at a better future.&rdquo;
+              </blockquote>
+              <div className="pt-4 border-t border-slate-200">
+                <div className="text-lg font-bold text-[#071A3D]">Chigozie Nkwo</div>
+                <div className="text-sm font-semibold text-[#0757D5]">
+                  CEO and Founder of Skill2Scale
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. TRAINING PROGRAMS */}
       <section id="courses-section" className="py-20 bg-[#F7F9FC] border-t border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -707,64 +749,21 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
         </div>
       </section>
 
-      {/* 9. CEO SECTION */}
-      {/* Uses exact statement from source in bold italic quotation format */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold text-[#0757D5] tracking-widest uppercase">
-              Founder Leadership
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071A3D] mt-1">
-              What Our CEO Has to Say
-            </h2>
-          </div>
-
-          <div className="bg-[#F7F9FC] border border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-14 shadow-xs">
-            {/* CEO Image */}
-            <div className="shrink-0 w-52 sm:w-64 lg:w-72">
-              <div className="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-slate-100">
-                <img
-                  src="/images/ceo.png"
-                  alt="Chigozie Nkwo - Founder and CEO of Skill2Scale"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-
-            {/* CEO Exact Statement */}
-            <div className="space-y-6 text-center lg:text-left flex-1">
-              <div className="text-4xl sm:text-5xl text-[#0757D5] font-serif leading-none">“</div>
-              <blockquote className="text-xl sm:text-2xl lg:text-3xl font-extrabold italic text-[#071A3D] leading-relaxed -mt-4">
-                &ldquo;We’re not just teaching skills. We’re solving unemployment, increasing access,
-                and giving Africans a shot at a better future.&rdquo;
-              </blockquote>
-              <div className="pt-4 border-t border-slate-200">
-                <div className="text-lg font-bold text-[#071A3D]">Chigozie Nkwo</div>
-                <div className="text-sm font-semibold text-[#0757D5]">
-                  CEO and Founder of Skill2Scale
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 10. PARTNERS IMAGE SECTION */}
-      {/* Clean image-only section displaying ONLY the supplied partner visual */}
-      <section className="py-16 bg-[#F7F9FC] border-t border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white rounded-2xl p-4 sm:p-8 shadow-xs border border-slate-200 flex justify-center items-center">
+      {/* INDUSTRY PARTNERS SECTION */}
+      <section className="py-14 sm:py-20 bg-white border-t border-b border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+          <div className="w-full max-w-2xl sm:max-w-3xl flex justify-center items-center">
             <img
-              src="/images/partners.png"
+              src="/images/partners.jpg"
               alt="Skill2Scale Digital Industry Partners"
-              className="max-w-full h-auto object-contain rounded-lg max-h-[500px]"
+              className="w-full h-auto max-h-[850px] object-contain rounded-2xl shadow-xs border border-slate-100 transition-shadow duration-300 hover:shadow-md"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
 
-      {/* 11. IMPACT SECTION */}
+      {/* IMPACT SECTION */}
       <section className="py-20 bg-[#071A3D] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-14 space-y-3">
@@ -821,34 +820,7 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
         </div>
       </section>
 
-      {/* 12. FINAL CONCLUSION MESSAGE */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-          <div className="w-16 h-1 bg-[#0757D5] mx-auto rounded-full" />
-          <blockquote className="text-xl sm:text-2xl lg:text-3xl text-slate-800 font-medium leading-relaxed">
-            &ldquo;At Skill2Scale Digital, we don&apos;t just teach digital skills — we build
-            futures, launch careers and create the next generation of African digital entrepreneurs.
-            Every student that walks through our doors leaves with practical skills, real experience
-            and the confidence to create opportunities in the digital economy.
-            <br />
-            <br />
-            Join us today and become part of Africa&apos;s fastest growing digital skills
-            community.&rdquo;
-          </blockquote>
-
-          <div className="pt-4">
-            <button
-              onClick={() => navigate('/register')}
-              className="inline-flex items-center justify-center gap-3 bg-[#0757D5] hover:bg-[#064ab8] text-white px-10 py-4 rounded-xl text-lg font-bold shadow-lg shadow-blue-800/30 hover:shadow-xl transition-all cursor-pointer active:scale-95"
-            >
-              <span>Start Your Journey</span>
-              <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* 13. FAQ SECTION */}
+      {/* FAQ SECTION */}
       <section className="py-20 bg-[#F7F9FC] border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14 space-y-3">
@@ -908,6 +880,33 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
               <MessageSquare className="w-4 h-4" />
               <span>Chat with Support on WhatsApp (+234 906 971 0687)</span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CONCLUSION MESSAGE */}
+      <section className="py-24 bg-white border-t border-slate-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+          <div className="w-16 h-1 bg-[#0757D5] mx-auto rounded-full" />
+          <blockquote className="text-xl sm:text-2xl lg:text-3xl text-slate-800 font-medium leading-relaxed">
+            &ldquo;At Skill2Scale Digital, we don&apos;t just teach digital skills — we build
+            futures, launch careers and create the next generation of African digital entrepreneurs.
+            Every student that walks through our doors leaves with practical skills, real experience
+            and the confidence to create opportunities in the digital economy.
+            <br />
+            <br />
+            Join us today and become part of Africa&apos;s fastest growing digital skills
+            community.&rdquo;
+          </blockquote>
+
+          <div className="pt-4">
+            <button
+              onClick={() => navigate('/register')}
+              className="inline-flex items-center justify-center gap-3 bg-[#0757D5] hover:bg-[#064ab8] text-white px-10 py-4 rounded-xl text-lg font-bold shadow-lg shadow-blue-800/30 hover:shadow-xl transition-all cursor-pointer active:scale-95"
+            >
+              <span>Start Your Journey</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </section>

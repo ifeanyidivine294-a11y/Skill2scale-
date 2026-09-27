@@ -299,6 +299,9 @@ function formatTimeAgo(timestamp: number): string {
 async function startServer() {
   const isProd = process.env.NODE_ENV === 'production' || !process.env.VITE_DEV;
 
+  // Serve static assets from public directory
+  app.use(express.static(path.resolve(__dirname, 'public')));
+
   // In development, hook into Vite middlewares
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
